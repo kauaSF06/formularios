@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    *{
+        margin:0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    
+    }
+    section{
+        box-shadow: 5px 5px 10px;
+        width: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        
+        
+    }
+    form{
+        width: 400px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .campo{
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    .esquecer{
+        text-align: center;
+        margin: 3vh;
+        display: flex;
+        justify-content: space-around;
+        button{
+            padding: 0vh 2vh;
+            border-radius: 10px;
+            background-color: darkorange;
+        }
+        a{
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        input{
+            box-shadow: 5px 5px 10px;
+        }
+    }
+      label{
+            font-size: large;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+</style>
+</head>
+<body>
+    <section>
+        <form>
+            <div class="campo">
+                <label for="usuario">campo usuario</label>
+                <input id="usuario" type="text" name="usuario" placeholder="digite seu nome" required>
+            </div>
+            <div class="campo">
+                <label for="senha">campo senha</label>
+                <input id="senha" type="password" name="senha" placeholder="digite sua senha" required>
+            </div>
+            <div class="campo">
+                <label for="lembrar_senha">
+                     <input id="lembrar_senha"type="checkbox" name="lembrar_senha" >
+                    Lembrar senha</label>
+               
+            </div>
+            <div class="esquecer">
+            <button type="submit">entrar</button>
+                <a href="esqueci_senha.html">i forget my password</a>
+            </div>
+        </form>
+    </section>
+</body>
+</html>
